@@ -1,0 +1,1 @@
+the shortcut of the folder to serve should be named shortcut

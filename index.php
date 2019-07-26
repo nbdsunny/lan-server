@@ -7,7 +7,7 @@
     <title>Lan Server</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
-<body>
+<body style="background-color:#262626">
 <div class="container">
     <?php
     if (isset($_GET['file_path'])) {
@@ -38,10 +38,10 @@
     $files = scandir($directory);
 
     ?>
-    <div class="jumbotron">
+    <div class="jumbotron bg-dark text-white">
         <form action="index.php" method="GET">
             <input type="hidden" name="file_path" value="<?php echo $homeDirectory; ?>">
-            <button type="submit" class="btn btn-primary"><?php echo $homeDirectory; ?></button>
+            <button type="submit" class="btn btn-success btn-block" ><?php echo $homeDirectory; ?></button>
             <hr>
         </form>
 
@@ -52,9 +52,9 @@
                 ?>
                 <form action="index.php" method="GET">
                     <input type="hidden" name="file_path" value="<?php echo $filePath; ?>">
-                    <button class="btn btn-primary"><?php echo $filePath; ?></button>
+                    <button class="btn btn-info btn-block"><?php echo $filePath; ?></button>
                 </form>
-                <br><br>
+                <br>
                 <?php
             }
         }

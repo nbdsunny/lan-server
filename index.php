@@ -51,7 +51,7 @@
                 $filePath = $directory . '\\' . $file;
                 ?>
                 <form action="index.php" method="GET">
-                    <input type="text" name="file_path" value="<?php echo $filePath; ?>">
+                    <input type="hidden" name="file_path" value="<?php echo $filePath; ?>">
                     <button class="btn btn-primary"><?php echo $filePath; ?></button>
                 </form>
                 <br><br>
